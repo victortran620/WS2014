@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MIZTableViewHeaderView.h"
 
 @interface MIZEpisodeListTableViewController : UITableViewController
 

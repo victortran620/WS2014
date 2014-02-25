@@ -103,9 +103,9 @@ static NSString *cellIdentifier = @"Cell";
                          @"Turnabout Intruder"
                          ];
     
-    
-    
     self.showSeasons = @[self.seasonOne, self.seasonTwo, [self seasonThree]];
+    [self.tableView registerClass:[MIZTableViewHeaderView class] forHeaderFooterViewReuseIdentifier:@"Header"];
+
 }
 
 
@@ -131,9 +131,16 @@ static NSString *cellIdentifier = @"Cell";
     return [self.showSeasons[section] count];
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return [NSString stringWithFormat:@"SEASON %d", section + 1];
+    MIZTableViewHeaderView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"Header"];
+    headerView.titleLabel.text = [NSString stringWithFormat:@"SEASON %d", section + 1];
+    return headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30.0f;
 }
 
 @end

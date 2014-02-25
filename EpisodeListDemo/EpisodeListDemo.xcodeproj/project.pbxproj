@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BCBFB2A18BD1BEE007BF20B /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBFB2918BD1BEE007BF20B /* SectionHeader.xib */; };
+		4BCBFB2E18BD2168007BF20B /* MIZTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBFB2D18BD2168007BF20B /* MIZTableViewHeaderView.m */; };
 		4BFAE5A818B3E49D0067E9A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAE5A718B3E49D0067E9A6 /* Foundation.framework */; };
 		4BFAE5AA18B3E49D0067E9A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAE5A918B3E49D0067E9A6 /* CoreGraphics.framework */; };
 		4BFAE5AC18B3E49D0067E9A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAE5AB18B3E49D0067E9A6 /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BCBFB2918BD1BEE007BF20B /* SectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SectionHeader.xib; path = View/XIB/SectionHeader.xib; sourceTree = "<group>"; };
+		4BCBFB2C18BD2168007BF20B /* MIZTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIZTableViewHeaderView.h; path = "View/UIKit Subclasses/MIZTableViewHeaderView.h"; sourceTree = "<group>"; };
+		4BCBFB2D18BD2168007BF20B /* MIZTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MIZTableViewHeaderView.m; path = "View/UIKit Subclasses/MIZTableViewHeaderView.m"; sourceTree = "<group>"; };
 		4BFAE5A418B3E49D0067E9A6 /* EpisodeListDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpisodeListDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFAE5A718B3E49D0067E9A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BFAE5A918B3E49D0067E9A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +84,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BCBFB2718BD1AFB007BF20B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BCBFB2B18BD2116007BF20B /* UIKit Subclasses */,
+				4BCBFB2818BD1B27007BF20B /* XIB */,
+				4BFAE5B918B3E49D0067E9A6 /* Main.storyboard */,
+				4BFAE5BF18B3E49D0067E9A6 /* Images.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4BCBFB2818BD1B27007BF20B /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				4BCBFB2918BD1BEE007BF20B /* SectionHeader.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		4BCBFB2B18BD2116007BF20B /* UIKit Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				4BCBFB2C18BD2168007BF20B /* MIZTableViewHeaderView.h */,
+				4BCBFB2D18BD2168007BF20B /* MIZTableViewHeaderView.m */,
+			);
+			name = "UIKit Subclasses";
+			sourceTree = "<group>";
+		};
 		4BFAE59B18B3E49D0067E9A6 = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +145,10 @@
 		4BFAE5AD18B3E49D0067E9A6 /* EpisodeListDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4BCBFB2718BD1AFB007BF20B /* View */,
 				4BFAE5DC18B3E5870067E9A6 /* View Controller */,
 				4BFAE5B618B3E49D0067E9A6 /* MIZAppDelegate.h */,
 				4BFAE5B718B3E49D0067E9A6 /* MIZAppDelegate.m */,
-				4BFAE5B918B3E49D0067E9A6 /* Main.storyboard */,
-				4BFAE5BF18B3E49D0067E9A6 /* Images.xcassets */,
 				4BFAE5AE18B3E49D0067E9A6 /* Supporting Files */,
 			);
 			path = EpisodeListDemo;
@@ -237,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCBFB2A18BD1BEE007BF20B /* SectionHeader.xib in Resources */,
 				4BFAE5C018B3E49D0067E9A6 /* Images.xcassets in Resources */,
 				4BFAE5B218B3E49D0067E9A6 /* InfoPlist.strings in Resources */,
 				4BFAE5BB18B3E49D0067E9A6 /* Main.storyboard in Resources */,
@@ -260,6 +293,7 @@
 			files = (
 				4BFAE5B418B3E49D0067E9A6 /* main.m in Sources */,
 				4BFAE5B818B3E49D0067E9A6 /* MIZAppDelegate.m in Sources */,
+				4BCBFB2E18BD2168007BF20B /* MIZTableViewHeaderView.m in Sources */,
 				4BFAE5DF18B3E5F30067E9A6 /* MIZEpisodeListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +503,7 @@
 				4BFAE5D818B3E49E0067E9A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BFAE5D918B3E49E0067E9A6 /* Build configuration list for PBXNativeTarget "EpisodeListDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +512,7 @@
 				4BFAE5DB18B3E49E0067E9A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
