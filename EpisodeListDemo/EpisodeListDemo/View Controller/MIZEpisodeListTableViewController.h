@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MIZTableViewHeaderView.h"
+#import "MIZEpisodeListFetcher.h"
 
 @interface MIZEpisodeListTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *seasonOne;
-@property (nonatomic, strong) NSArray *seasonTwo;
-@property (nonatomic, strong) NSArray *seasonThree;
-
-@property (nonatomic, strong) NSArray *showSeasons;
+@property (nonatomic, strong) NSArray *episodes;
 
 @end

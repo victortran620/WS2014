@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BCBFB2A18BD1BEE007BF20B /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BCBFB2918BD1BEE007BF20B /* SectionHeader.xib */; };
-		4BCBFB2E18BD2168007BF20B /* MIZTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBFB2D18BD2168007BF20B /* MIZTableViewHeaderView.m */; };
+		4B80E02418C8F9FA00D532F3 /* MIZEpisodeListFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B80E02318C8F9FA00D532F3 /* MIZEpisodeListFetcher.m */; };
+		4B80E02718C8FFF400D532F3 /* MIZEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B80E02618C8FFF400D532F3 /* MIZEpisode.m */; };
 		4BFAE5A818B3E49D0067E9A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAE5A718B3E49D0067E9A6 /* Foundation.framework */; };
 		4BFAE5AA18B3E49D0067E9A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAE5A918B3E49D0067E9A6 /* CoreGraphics.framework */; };
 		4BFAE5AC18B3E49D0067E9A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFAE5AB18B3E49D0067E9A6 /* UIKit.framework */; };
@@ -36,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4BCBFB2918BD1BEE007BF20B /* SectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SectionHeader.xib; path = View/XIB/SectionHeader.xib; sourceTree = "<group>"; };
-		4BCBFB2C18BD2168007BF20B /* MIZTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIZTableViewHeaderView.h; path = "View/UIKit Subclasses/MIZTableViewHeaderView.h"; sourceTree = "<group>"; };
-		4BCBFB2D18BD2168007BF20B /* MIZTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MIZTableViewHeaderView.m; path = "View/UIKit Subclasses/MIZTableViewHeaderView.m"; sourceTree = "<group>"; };
+		4B80E02218C8F9FA00D532F3 /* MIZEpisodeListFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIZEpisodeListFetcher.h; path = Model/Fetching/MIZEpisodeListFetcher.h; sourceTree = "<group>"; };
+		4B80E02318C8F9FA00D532F3 /* MIZEpisodeListFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MIZEpisodeListFetcher.m; path = Model/Fetching/MIZEpisodeListFetcher.m; sourceTree = "<group>"; };
+		4B80E02518C8FFF400D532F3 /* MIZEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIZEpisode.h; path = Model/MIZEpisode.h; sourceTree = "<group>"; };
+		4B80E02618C8FFF400D532F3 /* MIZEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MIZEpisode.m; path = Model/MIZEpisode.m; sourceTree = "<group>"; };
 		4BFAE5A418B3E49D0067E9A6 /* EpisodeListDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpisodeListDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFAE5A718B3E49D0067E9A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BFAE5A918B3E49D0067E9A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,32 +85,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4BCBFB2718BD1AFB007BF20B /* View */ = {
+		4B80E01F18C8F93A00D532F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4BCBFB2B18BD2116007BF20B /* UIKit Subclasses */,
-				4BCBFB2818BD1B27007BF20B /* XIB */,
 				4BFAE5B918B3E49D0067E9A6 /* Main.storyboard */,
 				4BFAE5BF18B3E49D0067E9A6 /* Images.xcassets */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		4BCBFB2818BD1B27007BF20B /* XIB */ = {
+		4B80E02018C8F95C00D532F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4BCBFB2918BD1BEE007BF20B /* SectionHeader.xib */,
+				4B80E02118C8F9AA00D532F3 /* Fetching */,
+				4B80E02518C8FFF400D532F3 /* MIZEpisode.h */,
+				4B80E02618C8FFF400D532F3 /* MIZEpisode.m */,
 			);
-			name = XIB;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		4BCBFB2B18BD2116007BF20B /* UIKit Subclasses */ = {
+		4B80E02118C8F9AA00D532F3 /* Fetching */ = {
 			isa = PBXGroup;
 			children = (
-				4BCBFB2C18BD2168007BF20B /* MIZTableViewHeaderView.h */,
-				4BCBFB2D18BD2168007BF20B /* MIZTableViewHeaderView.m */,
+				4B80E02218C8F9FA00D532F3 /* MIZEpisodeListFetcher.h */,
+				4B80E02318C8F9FA00D532F3 /* MIZEpisodeListFetcher.m */,
 			);
-			name = "UIKit Subclasses";
+			name = Fetching;
 			sourceTree = "<group>";
 		};
 		4BFAE59B18B3E49D0067E9A6 = {
@@ -145,10 +146,9 @@
 		4BFAE5AD18B3E49D0067E9A6 /* EpisodeListDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4BCBFB2718BD1AFB007BF20B /* View */,
+				4B80E02018C8F95C00D532F3 /* Model */,
+				4B80E01F18C8F93A00D532F3 /* View */,
 				4BFAE5DC18B3E5870067E9A6 /* View Controller */,
-				4BFAE5B618B3E49D0067E9A6 /* MIZAppDelegate.h */,
-				4BFAE5B718B3E49D0067E9A6 /* MIZAppDelegate.m */,
 				4BFAE5AE18B3E49D0067E9A6 /* Supporting Files */,
 			);
 			path = EpisodeListDemo;
@@ -157,6 +157,8 @@
 		4BFAE5AE18B3E49D0067E9A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BFAE5B618B3E49D0067E9A6 /* MIZAppDelegate.h */,
+				4BFAE5B718B3E49D0067E9A6 /* MIZAppDelegate.m */,
 				4BFAE5AF18B3E49D0067E9A6 /* EpisodeListDemo-Info.plist */,
 				4BFAE5B018B3E49D0067E9A6 /* InfoPlist.strings */,
 				4BFAE5B318B3E49D0067E9A6 /* main.m */,
@@ -237,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MIZ;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Mizzou IT";
 				TargetAttributes = {
 					4BFAE5C418B3E49E0067E9A6 = {
@@ -269,7 +271,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCBFB2A18BD1BEE007BF20B /* SectionHeader.xib in Resources */,
 				4BFAE5C018B3E49D0067E9A6 /* Images.xcassets in Resources */,
 				4BFAE5B218B3E49D0067E9A6 /* InfoPlist.strings in Resources */,
 				4BFAE5BB18B3E49D0067E9A6 /* Main.storyboard in Resources */,
@@ -291,9 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B80E02718C8FFF400D532F3 /* MIZEpisode.m in Sources */,
+				4B80E02418C8F9FA00D532F3 /* MIZEpisodeListFetcher.m in Sources */,
 				4BFAE5B418B3E49D0067E9A6 /* main.m in Sources */,
 				4BFAE5B818B3E49D0067E9A6 /* MIZAppDelegate.m in Sources */,
-				4BCBFB2E18BD2168007BF20B /* MIZTableViewHeaderView.m in Sources */,
 				4BFAE5DF18B3E5F30067E9A6 /* MIZEpisodeListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +350,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -387,7 +388,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -445,7 +445,6 @@
 		4BFAE5DA18B3E49E0067E9A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EpisodeListDemo.app/EpisodeListDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -468,7 +467,6 @@
 		4BFAE5DB18B3E49E0067E9A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EpisodeListDemo.app/EpisodeListDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
